@@ -2,7 +2,7 @@ import "./App.css";
 import { useGetProductsQuery } from "./features/product/productSlice2";
 import CardProduct from "./components/card/card-product";
 import SkeletonCardProduct from "./components/card/skeleton-card-product";
-import SEOComponent from "./components/SEOComponent";
+import SEOComponent from "./components/SEO/SEOComponent.jsx";
 
 function App() {
   const { data, isLoading } = useGetProductsQuery();
@@ -59,7 +59,7 @@ function App() {
       />
 
       <main className="max-w-screen-xl mx-auto">
-        {/* Hero Section for SEO */}
+       
         <header className="mb-8">
           <h1 className="text-4xl font-bold text-center text-gray-800 mb-4">
             Welcome to ODINN
